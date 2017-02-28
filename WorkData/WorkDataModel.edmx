@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CATEGORIES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="100" />
+          <Property Name="CREATEDON" Type="datetime" />
+          <Property Name="STATUS" Type="varchar" MaxLength="50" />
+          <Property Name="IMAGEURL" Type="varchar" MaxLength="300" />
+          <Property Name="PRODUCTS" Type="int" />
+          <Property Name="SUBCATEGORIES" Type="int" />
+          <Property Name="SYNONYMS" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="USERS">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="USERID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USERNAME" Type="varchar" MaxLength="100" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="20" />
+          <Property Name="EMAILID" Type="varchar" MaxLength="100" />
+          <Property Name="CONTACTNUMBER" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="OTP" Type="numeric" Precision="6" Scale="0" />
+          <Property Name="STATUS" Type="varchar" MaxLength="20" />
+          <Property Name="JOINEDON" Type="datetime" />
+          <Property Name="AREA" Type="varchar" MaxLength="100" />
+          <Property Name="CITY" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="ModelsStoreContainer">
+          <EntitySet Name="CATEGORIES" EntityType="Self.CATEGORIES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USERS" EntityType="Self.USERS" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CATEGORy">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+          <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IMAGEURL" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCTS" Type="Int32" />
+          <Property Name="SUBCATEGORIES" Type="Int32" />
+          <Property Name="SYNONYMS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="WorkEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CATEGORIES" EntityType="Self.CATEGORy" />
+          <EntitySet Name="USERS" EntityType="Models.USER" />
+        </EntityContainer>
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="USERID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EMAILID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CONTACTNUMBER" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="OTP" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JOINEDON" Type="DateTime" Precision="3" />
+          <Property Name="AREA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="WorkEntities">
+          <EntitySetMapping Name="CATEGORIES">
+            <EntityTypeMapping TypeName="Models.CATEGORy">
+              <MappingFragment StoreEntitySet="CATEGORIES">
+                <ScalarProperty Name="SYNONYMS" ColumnName="SYNONYMS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+                <ScalarProperty Name="PRODUCTS" ColumnName="PRODUCTS" />
+                <ScalarProperty Name="SUBCATEGORIES" ColumnName="SUBCATEGORIES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USERS">
+            <EntityTypeMapping TypeName="Models.USER">
+              <MappingFragment StoreEntitySet="USERS">
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="AREA" ColumnName="AREA" />
+                <ScalarProperty Name="JOINEDON" ColumnName="JOINEDON" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="OTP" ColumnName="OTP" />
+                <ScalarProperty Name="CONTACTNUMBER" ColumnName="CONTACTNUMBER" />
+                <ScalarProperty Name="EMAILID" ColumnName="EMAILID" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
