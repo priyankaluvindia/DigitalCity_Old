@@ -15,6 +15,6 @@ namespace WorkModels
         public string IMAGEURL { get; set; }
         public Nullable<int> PRODUCTS { get; set; }
         public Nullable<int> SUBCATEGORIES { get; set; }
-        public string SYNONYMSS { get; set; }
+        public string SYNONYMS{ get; set; }
     }
 }
