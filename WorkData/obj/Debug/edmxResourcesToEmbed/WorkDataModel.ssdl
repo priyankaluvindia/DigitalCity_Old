@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WorkModelStoreContainer">
+    <EntitySet Name="CATEGORIES" EntityType="WorkModel.Store.CATEGORIES" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SUBCATEGORY" EntityType="WorkModel.Store.SUBCATEGORY" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCustomer" EntityType="WorkModel.Store.tblCustomer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblMechanic" EntityType="WorkModel.Store.tblMechanic" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__SUBCATEGO__CATEG__108B795B" Association="WorkModel.Store.FK__SUBCATEGO__CATEG__108B795B">
+      <End Role="CATEGORIES" EntitySet="CATEGORIES" />
+      <End Role="SUBCATEGORY" EntitySet="SUBCATEGORY" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CATEGORIES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="varchar" MaxLength="50" />
+    <Property Name="IMAGEURL" Type="varchar" MaxLength="300" />
+    <Property Name="PRODUCTS" Type="int" />
+    <Property Name="SUBCATEGORIES" Type="int" />
+    <Property Name="SYNONYMS" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SUBCATEGORY">
+    <Key>
+      <PropertyRef Name="SUBCATEGORYID" />
+    </Key>
+    <Property Name="SUBCATEGORYID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="varchar" MaxLength="100" />
+    <Property Name="CREATEDON" Type="datetime" />
+    <Property Name="STATUS" Type="varchar" MaxLength="50" />
+    <Property Name="IMAGEURL" Type="varchar" MaxLength="300" />
+    <Property Name="PRODUCTS" Type="int" />
+    <Property Name="SYNONYMS" Type="varchar" MaxLength="200" />
+    <Property Name="CATEGORYID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCustomer">
+    <Key>
+      <PropertyRef Name="Sno" />
+    </Key>
+    <Property Name="Sno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="ContactNo" Type="varchar" MaxLength="20" />
+    <Property Name="BikeNumber" Type="varchar" MaxLength="20" />
+    <Property Name="Manufacturer" Type="varchar" MaxLength="50" />
+    <Property Name="Model" Type="varchar" MaxLength="50" />
+    <Property Name="DateofService" Type="date" />
+    <Property Name="TotalAmount" Type="numeric" Precision="10" />
+    <Property Name="NextServiceDate" Type="date" />
+    <Property Name="Reference" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="100" />
+    <Property Name="BikePic" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblMechanic">
+    <Key>
+      <PropertyRef Name="MechanicId" />
+    </Key>
+    <Property Name="MechanicId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="ContactNo" Type="varchar" MaxLength="20" />
+    <Property Name="ShowRoom" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="JoiningDate" Type="date" />
+    <Property Name="MechAddress" Type="varchar" MaxLength="50" />
+    <Property Name="Amount" Type="numeric" Precision="10" />
+    <Property Name="BikeServiced" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK__SUBCATEGO__CATEG__108B795B">
+    <End Role="CATEGORIES" Type="WorkModel.Store.CATEGORIES" Multiplicity="0..1" />
+    <End Role="SUBCATEGORY" Type="WorkModel.Store.SUBCATEGORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORIES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SUBCATEGORY">
+        <PropertyRef Name="CATEGORYID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

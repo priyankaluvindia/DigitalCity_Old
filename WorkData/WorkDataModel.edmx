@@ -4,12 +4,22 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="WorkModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="WorkModelStoreContainer">
+          <EntitySet Name="CATEGORIES" EntityType="WorkModel.Store.CATEGORIES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SUBCATEGORY" EntityType="WorkModel.Store.SUBCATEGORY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCustomer" EntityType="WorkModel.Store.tblCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMechanic" EntityType="WorkModel.Store.tblMechanic" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__SUBCATEGO__CATEG__108B795B" Association="WorkModel.Store.FK__SUBCATEGO__CATEG__108B795B">
+            <End Role="CATEGORIES" EntitySet="CATEGORIES" />
+            <End Role="SUBCATEGORY" EntitySet="SUBCATEGORY" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="CATEGORIES">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="NAME" Type="nvarchar" MaxLength="100" />
           <Property Name="CREATEDON" Type="datetime" />
           <Property Name="STATUS" Type="varchar" MaxLength="50" />
@@ -18,71 +28,161 @@
           <Property Name="SUBCATEGORIES" Type="int" />
           <Property Name="SYNONYMS" Type="nvarchar" MaxLength="200" />
         </EntityType>
-        <EntityType Name="USERS">
+        <EntityType Name="SUBCATEGORY">
           <Key>
-            <PropertyRef Name="USERID" />
+            <PropertyRef Name="SUBCATEGORYID" />
           </Key>
-          <Property Name="USERID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="USERNAME" Type="varchar" MaxLength="100" />
-          <Property Name="PASSWORD" Type="varchar" MaxLength="20" />
-          <Property Name="EMAILID" Type="varchar" MaxLength="100" />
-          <Property Name="CONTACTNUMBER" Type="numeric" Precision="10" Scale="0" />
-          <Property Name="OTP" Type="numeric" Precision="6" Scale="0" />
-          <Property Name="STATUS" Type="varchar" MaxLength="20" />
-          <Property Name="JOINEDON" Type="datetime" />
-          <Property Name="AREA" Type="varchar" MaxLength="100" />
-          <Property Name="CITY" Type="varchar" MaxLength="50" />
+          <Property Name="SUBCATEGORYID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="varchar" MaxLength="100" />
+          <Property Name="CREATEDON" Type="datetime" />
+          <Property Name="STATUS" Type="varchar" MaxLength="50" />
+          <Property Name="IMAGEURL" Type="varchar" MaxLength="300" />
+          <Property Name="PRODUCTS" Type="int" />
+          <Property Name="SYNONYMS" Type="varchar" MaxLength="200" />
+          <Property Name="CATEGORYID" Type="int" />
         </EntityType>
-        <EntityContainer Name="ModelsStoreContainer">
-          <EntitySet Name="CATEGORIES" EntityType="Self.CATEGORIES" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="USERS" EntityType="Self.USERS" Schema="dbo" store:Type="Tables" />
-        </EntityContainer>
-      </Schema></edmx:StorageModels>
+        <EntityType Name="tblCustomer">
+          <Key>
+            <PropertyRef Name="Sno" />
+          </Key>
+          <Property Name="Sno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="ContactNo" Type="varchar" MaxLength="20" />
+          <Property Name="BikeNumber" Type="varchar" MaxLength="20" />
+          <Property Name="Manufacturer" Type="varchar" MaxLength="50" />
+          <Property Name="Model" Type="varchar" MaxLength="50" />
+          <Property Name="DateofService" Type="date" />
+          <Property Name="TotalAmount" Type="numeric" Precision="10" />
+          <Property Name="NextServiceDate" Type="date" />
+          <Property Name="Reference" Type="varchar" MaxLength="50" />
+          <Property Name="Remark" Type="varchar" MaxLength="100" />
+          <Property Name="BikePic" Type="varchar" MaxLength="50" />
+          <Property Name="CustomerType" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblMechanic">
+          <Key>
+            <PropertyRef Name="MechanicId" />
+          </Key>
+          <Property Name="MechanicId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="ContactNo" Type="varchar" MaxLength="20" />
+          <Property Name="ShowRoom" Type="varchar" MaxLength="50" />
+          <Property Name="Type" Type="varchar" MaxLength="50" />
+          <Property Name="JoiningDate" Type="date" />
+          <Property Name="MechAddress" Type="varchar" MaxLength="50" />
+          <Property Name="Amount" Type="numeric" Precision="10" />
+          <Property Name="BikeServiced" Type="varchar" MaxLength="50" />
+          <Property Name="Remark" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK__SUBCATEGO__CATEG__108B795B">
+          <End Role="CATEGORIES" Type="WorkModel.Store.CATEGORIES" Multiplicity="0..1" />
+          <End Role="SUBCATEGORY" Type="WorkModel.Store.SUBCATEGORY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CATEGORIES">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SUBCATEGORY">
+              <PropertyRef Name="CATEGORYID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="WorkModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="WorkEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="CATEGORIES" EntityType="WorkModel.CATEGORy" />
+          <EntitySet Name="SUBCATEGORies" EntityType="WorkModel.SUBCATEGORY" />
+          <EntitySet Name="tblCustomers" EntityType="WorkModel.tblCustomer" />
+          <EntitySet Name="tblMechanics" EntityType="WorkModel.tblMechanic" />
+          <AssociationSet Name="FK__SUBCATEGO__CATEG__108B795B" Association="WorkModel.FK__SUBCATEGO__CATEG__108B795B">
+            <End Role="CATEGORIES" EntitySet="CATEGORIES" />
+            <End Role="SUBCATEGORY" EntitySet="SUBCATEGORies" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="CATEGORy">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="CREATEDON" Type="DateTime" Precision="3" />
-          <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="IMAGEURL" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IMAGEURL" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
           <Property Name="PRODUCTS" Type="Int32" />
           <Property Name="SUBCATEGORIES" Type="Int32" />
-          <Property Name="SYNONYMS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SYNONYMS" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="SUBCATEGORies1" Relationship="WorkModel.FK__SUBCATEGO__CATEG__108B795B" FromRole="CATEGORIES" ToRole="SUBCATEGORY" />
         </EntityType>
-        <EntityContainer Name="WorkEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="CATEGORIES" EntityType="Self.CATEGORy" />
-          <EntitySet Name="USERS" EntityType="Models.USER" />
-        </EntityContainer>
-        <EntityType Name="USER">
+        <EntityType Name="SUBCATEGORY">
           <Key>
-            <PropertyRef Name="USERID" />
+            <PropertyRef Name="SUBCATEGORYID" />
           </Key>
-          <Property Name="USERID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="USERNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="PASSWORD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="EMAILID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="CONTACTNUMBER" Type="Decimal" Precision="10" Scale="0" />
-          <Property Name="OTP" Type="Decimal" Precision="6" Scale="0" />
-          <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="JOINEDON" Type="DateTime" Precision="3" />
-          <Property Name="AREA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SUBCATEGORYID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+          <Property Name="STATUS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IMAGEURL" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="PRODUCTS" Type="Int32" />
+          <Property Name="SYNONYMS" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="CATEGORYID" Type="Int32" />
+          <NavigationProperty Name="CATEGORy" Relationship="WorkModel.FK__SUBCATEGO__CATEG__108B795B" FromRole="SUBCATEGORY" ToRole="CATEGORIES" />
         </EntityType>
+        <EntityType Name="tblCustomer">
+          <Key>
+            <PropertyRef Name="Sno" />
+          </Key>
+          <Property Name="Sno" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ContactNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="BikeNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Manufacturer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Model" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DateofService" Type="DateTime" Precision="0" />
+          <Property Name="TotalAmount" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="NextServiceDate" Type="DateTime" Precision="0" />
+          <Property Name="Reference" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="BikePic" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CustomerType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblMechanic">
+          <Key>
+            <PropertyRef Name="MechanicId" />
+          </Key>
+          <Property Name="MechanicId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ContactNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ShowRoom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="JoiningDate" Type="DateTime" Precision="0" />
+          <Property Name="MechAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Amount" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="BikeServiced" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__SUBCATEGO__CATEG__108B795B">
+          <End Role="CATEGORIES" Type="WorkModel.CATEGORy" Multiplicity="0..1" />
+          <End Role="SUBCATEGORY" Type="WorkModel.SUBCATEGORY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CATEGORIES">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SUBCATEGORY">
+              <PropertyRef Name="CATEGORYID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="WorkEntities">
+        <EntityContainerMapping StorageEntityContainer="WorkModelStoreContainer" CdmEntityContainer="WorkEntities">
           <EntitySetMapping Name="CATEGORIES">
-            <EntityTypeMapping TypeName="Models.CATEGORy">
+            <EntityTypeMapping TypeName="WorkModel.CATEGORy">
               <MappingFragment StoreEntitySet="CATEGORIES">
-                <ScalarProperty Name="SYNONYMS" ColumnName="SYNONYMS" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
                 <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
@@ -90,22 +190,56 @@
                 <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
                 <ScalarProperty Name="PRODUCTS" ColumnName="PRODUCTS" />
                 <ScalarProperty Name="SUBCATEGORIES" ColumnName="SUBCATEGORIES" />
+                <ScalarProperty Name="SYNONYMS" ColumnName="SYNONYMS" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="USERS">
-            <EntityTypeMapping TypeName="Models.USER">
-              <MappingFragment StoreEntitySet="USERS">
-                <ScalarProperty Name="CITY" ColumnName="CITY" />
-                <ScalarProperty Name="AREA" ColumnName="AREA" />
-                <ScalarProperty Name="JOINEDON" ColumnName="JOINEDON" />
+          <EntitySetMapping Name="SUBCATEGORies">
+            <EntityTypeMapping TypeName="WorkModel.SUBCATEGORY">
+              <MappingFragment StoreEntitySet="SUBCATEGORY">
+                <ScalarProperty Name="SUBCATEGORYID" ColumnName="SUBCATEGORYID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
                 <ScalarProperty Name="STATUS" ColumnName="STATUS" />
-                <ScalarProperty Name="OTP" ColumnName="OTP" />
-                <ScalarProperty Name="CONTACTNUMBER" ColumnName="CONTACTNUMBER" />
-                <ScalarProperty Name="EMAILID" ColumnName="EMAILID" />
-                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
-                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
-                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+                <ScalarProperty Name="PRODUCTS" ColumnName="PRODUCTS" />
+                <ScalarProperty Name="SYNONYMS" ColumnName="SYNONYMS" />
+                <ScalarProperty Name="CATEGORYID" ColumnName="CATEGORYID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCustomers">
+            <EntityTypeMapping TypeName="WorkModel.tblCustomer">
+              <MappingFragment StoreEntitySet="tblCustomer">
+                <ScalarProperty Name="Sno" ColumnName="Sno" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="BikeNumber" ColumnName="BikeNumber" />
+                <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="DateofService" ColumnName="DateofService" />
+                <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+                <ScalarProperty Name="NextServiceDate" ColumnName="NextServiceDate" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="BikePic" ColumnName="BikePic" />
+                <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMechanics">
+            <EntityTypeMapping TypeName="WorkModel.tblMechanic">
+              <MappingFragment StoreEntitySet="tblMechanic">
+                <ScalarProperty Name="MechanicId" ColumnName="MechanicId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="ShowRoom" ColumnName="ShowRoom" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+                <ScalarProperty Name="MechAddress" ColumnName="MechAddress" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="BikeServiced" ColumnName="BikeServiced" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -123,9 +257,8 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>

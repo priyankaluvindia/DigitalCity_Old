@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WorkEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="CATEGORIES" EntityType="WorkModel.CATEGORy" />
+    <EntitySet Name="SUBCATEGORies" EntityType="WorkModel.SUBCATEGORY" />
+    <EntitySet Name="tblCustomers" EntityType="WorkModel.tblCustomer" />
+    <EntitySet Name="tblMechanics" EntityType="WorkModel.tblMechanic" />
+    <AssociationSet Name="FK__SUBCATEGO__CATEG__108B795B" Association="WorkModel.FK__SUBCATEGO__CATEG__108B795B">
+      <End Role="CATEGORIES" EntitySet="CATEGORIES" />
+      <End Role="SUBCATEGORY" EntitySet="SUBCATEGORies" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CATEGORy">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IMAGEURL" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="PRODUCTS" Type="Int32" />
+    <Property Name="SUBCATEGORIES" Type="Int32" />
+    <Property Name="SYNONYMS" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SUBCATEGORies1" Relationship="WorkModel.FK__SUBCATEGO__CATEG__108B795B" FromRole="CATEGORIES" ToRole="SUBCATEGORY" />
+  </EntityType>
+  <EntityType Name="SUBCATEGORY">
+    <Key>
+      <PropertyRef Name="SUBCATEGORYID" />
+    </Key>
+    <Property Name="SUBCATEGORYID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDON" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IMAGEURL" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="PRODUCTS" Type="Int32" />
+    <Property Name="SYNONYMS" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CATEGORYID" Type="Int32" />
+    <NavigationProperty Name="CATEGORy" Relationship="WorkModel.FK__SUBCATEGO__CATEG__108B795B" FromRole="SUBCATEGORY" ToRole="CATEGORIES" />
+  </EntityType>
+  <EntityType Name="tblCustomer">
+    <Key>
+      <PropertyRef Name="Sno" />
+    </Key>
+    <Property Name="Sno" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="BikeNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Manufacturer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DateofService" Type="DateTime" Precision="0" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="NextServiceDate" Type="DateTime" Precision="0" />
+    <Property Name="Reference" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="BikePic" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblMechanic">
+    <Key>
+      <PropertyRef Name="MechanicId" />
+    </Key>
+    <Property Name="MechanicId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ShowRoom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="JoiningDate" Type="DateTime" Precision="0" />
+    <Property Name="MechAddress" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="BikeServiced" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__SUBCATEGO__CATEG__108B795B">
+    <End Role="CATEGORIES" Type="WorkModel.CATEGORy" Multiplicity="0..1" />
+    <End Role="SUBCATEGORY" Type="WorkModel.SUBCATEGORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORIES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SUBCATEGORY">
+        <PropertyRef Name="CATEGORYID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WorkModelStoreContainer" CdmEntityContainer="WorkEntities">
+    <EntitySetMapping Name="CATEGORIES">
+      <EntityTypeMapping TypeName="WorkModel.CATEGORy">
+        <MappingFragment StoreEntitySet="CATEGORIES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+          <ScalarProperty Name="PRODUCTS" ColumnName="PRODUCTS" />
+          <ScalarProperty Name="SUBCATEGORIES" ColumnName="SUBCATEGORIES" />
+          <ScalarProperty Name="SYNONYMS" ColumnName="SYNONYMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUBCATEGORies">
+      <EntityTypeMapping TypeName="WorkModel.SUBCATEGORY">
+        <MappingFragment StoreEntitySet="SUBCATEGORY">
+          <ScalarProperty Name="SUBCATEGORYID" ColumnName="SUBCATEGORYID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CREATEDON" ColumnName="CREATEDON" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+          <ScalarProperty Name="PRODUCTS" ColumnName="PRODUCTS" />
+          <ScalarProperty Name="SYNONYMS" ColumnName="SYNONYMS" />
+          <ScalarProperty Name="CATEGORYID" ColumnName="CATEGORYID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCustomers">
+      <EntityTypeMapping TypeName="WorkModel.tblCustomer">
+        <MappingFragment StoreEntitySet="tblCustomer">
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="BikeNumber" ColumnName="BikeNumber" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="DateofService" ColumnName="DateofService" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="NextServiceDate" ColumnName="NextServiceDate" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BikePic" ColumnName="BikePic" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMechanics">
+      <EntityTypeMapping TypeName="WorkModel.tblMechanic">
+        <MappingFragment StoreEntitySet="tblMechanic">
+          <ScalarProperty Name="MechanicId" ColumnName="MechanicId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="ShowRoom" ColumnName="ShowRoom" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="MechAddress" ColumnName="MechAddress" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="BikeServiced" ColumnName="BikeServiced" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

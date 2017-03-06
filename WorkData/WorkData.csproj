@@ -55,7 +55,13 @@
       <DependentUpon>WorkDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="USER.cs">
+    <Compile Include="SUBCATEGORY.cs">
+      <DependentUpon>WorkDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomer.cs">
+      <DependentUpon>WorkDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMechanic.cs">
       <DependentUpon>WorkDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="WorkDataModel.Context.cs">
@@ -75,29 +81,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="WorkDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>WorkDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="packages.config" />
-    <None Include="WorkDataModel.edmx.diagram">
-      <DependentUpon>WorkDataModel.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="WorkDataModel.Context.tt">
+    <None Include="WorkDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>WorkDataModel.edmx</DependentUpon>
       <LastGenOutput>WorkDataModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="WorkDataModel.tt">
+    </None>
+    <None Include="WorkDataModel.edmx.diagram">
+      <DependentUpon>WorkDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="WorkDataModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>WorkDataModel.edmx</DependentUpon>
       <LastGenOutput>WorkDataModel.cs</LastGenOutput>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

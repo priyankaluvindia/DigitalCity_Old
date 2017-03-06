@@ -1,0 +1,10 @@
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\WorkData.dll.config
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\WorkData.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\WorkData.pdb
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\EntityFramework.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\EntityFramework.xml
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\obj\Debug\WorkData.csprojResolveAssemblyReference.cache
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\obj\Debug\WorkData.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkData\obj\Debug\WorkData.pdb
