@@ -1,0 +1,14 @@
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkRepo.dll.config
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkRepo.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkRepo.pdb
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\EntityFramework.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkData.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkModels.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkData.pdb
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\WorkModels.pdb
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\EntityFramework.xml
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\obj\Debug\WorkRepo.csprojResolveAssemblyReference.cache
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\obj\Debug\WorkRepo.dll
+C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\WorkRepo\obj\Debug\WorkRepo.pdb

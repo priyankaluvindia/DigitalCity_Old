@@ -52,6 +52,7 @@
     <Compile Include="CategoryRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationRepo.cs" />
+    <Compile Include="SubCategoryRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WorkData\WorkData.csproj">
@@ -64,7 +65,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
