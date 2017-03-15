@@ -69,3 +69,217 @@ C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\Work\bin\WorkData.pdb
 C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.csprojResolveAssemblyReference.cache
 C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.dll
 C:\Users\DSOFT\Desktop\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\ApplicationInsights.config
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\csc.exe
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\vbc.exe
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\VBCSCompiler.exe
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Work.dll.config
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Work.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Work.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Antlr3.Runtime.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.SqlServer.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.Web.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.ApplicationInsights.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Newtonsoft.Json.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Net.Http.Formatting.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Cors.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Helpers.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.Cors.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.WebHost.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Mvc.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Optimization.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Razor.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Deployment.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Razor.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WebGrease.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkModels.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkRepo.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkData.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkModels.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkRepo.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.SqlServer.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.Web.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.ApplicationInsights.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.Cors.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Newtonsoft.Json.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Net.Http.Formatting.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Helpers.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.WebHost.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Mvc.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Optimization.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Razor.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Deployment.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Razor.xml
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Antlr3.Runtime.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkData.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.csprojResolveAssemblyReference.cache
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\DigitalCityProject\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\ApplicationInsights.config
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\csc.exe
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\vbc.exe
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\VBCSCompiler.exe
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Work.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Work.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Antlr3.Runtime.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.SqlServer.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.Web.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Newtonsoft.Json.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Net.Http.Formatting.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Cors.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Helpers.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.Cors.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.WebHost.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Mvc.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Optimization.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Razor.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Razor.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WebGrease.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkModels.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkRepo.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkData.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkModels.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkRepo.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\EntityFramework.SqlServer.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.Web.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.Cors.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Newtonsoft.Json.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Net.Http.Formatting.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Helpers.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Http.WebHost.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Mvc.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Optimization.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.Razor.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\System.Web.WebPages.Razor.xml
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\Antlr3.Runtime.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\bin\WorkData.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.csprojResolveAssemblyReference.cache
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\DigitalCityProject\DigitalCityProject\DigitalCity\Work\obj\Debug\Work.pdb
+G:\DigitalCity\Work\bin\ApplicationInsights.config
+G:\DigitalCity\Work\bin\roslyn\csc.exe
+G:\DigitalCity\Work\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\DigitalCity\Work\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\DigitalCity\Work\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\DigitalCity\Work\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\DigitalCity\Work\bin\roslyn\System.Collections.Immutable.dll
+G:\DigitalCity\Work\bin\roslyn\System.Reflection.Metadata.dll
+G:\DigitalCity\Work\bin\roslyn\vbc.exe
+G:\DigitalCity\Work\bin\roslyn\VBCSCompiler.exe
+G:\DigitalCity\Work\bin\roslyn\VBCSCompiler.exe.config
+G:\DigitalCity\Work\bin\Work.dll
+G:\DigitalCity\Work\bin\Work.pdb
+G:\DigitalCity\Work\bin\Antlr3.Runtime.dll
+G:\DigitalCity\Work\bin\EntityFramework.dll
+G:\DigitalCity\Work\bin\EntityFramework.SqlServer.dll
+G:\DigitalCity\Work\bin\Microsoft.AI.Agent.Intercept.dll
+G:\DigitalCity\Work\bin\Microsoft.AI.DependencyCollector.dll
+G:\DigitalCity\Work\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\DigitalCity\Work\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\DigitalCity\Work\bin\Microsoft.AI.Web.dll
+G:\DigitalCity\Work\bin\Microsoft.AI.WindowsServer.dll
+G:\DigitalCity\Work\bin\Microsoft.ApplicationInsights.dll
+G:\DigitalCity\Work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\DigitalCity\Work\bin\Microsoft.Web.Infrastructure.dll
+G:\DigitalCity\Work\bin\Newtonsoft.Json.dll
+G:\DigitalCity\Work\bin\System.Net.Http.Formatting.dll
+G:\DigitalCity\Work\bin\System.Web.Cors.dll
+G:\DigitalCity\Work\bin\System.Web.Helpers.dll
+G:\DigitalCity\Work\bin\System.Web.Http.Cors.dll
+G:\DigitalCity\Work\bin\System.Web.Http.dll
+G:\DigitalCity\Work\bin\System.Web.Http.WebHost.dll
+G:\DigitalCity\Work\bin\System.Web.Mvc.dll
+G:\DigitalCity\Work\bin\System.Web.Optimization.dll
+G:\DigitalCity\Work\bin\System.Web.Razor.dll
+G:\DigitalCity\Work\bin\System.Web.WebPages.Deployment.dll
+G:\DigitalCity\Work\bin\System.Web.WebPages.dll
+G:\DigitalCity\Work\bin\System.Web.WebPages.Razor.dll
+G:\DigitalCity\Work\bin\WebGrease.dll
+G:\DigitalCity\Work\bin\WorkModels.dll
+G:\DigitalCity\Work\bin\WorkRepo.dll
+G:\DigitalCity\Work\bin\WorkData.dll
+G:\DigitalCity\Work\bin\WorkModels.pdb
+G:\DigitalCity\Work\bin\WorkRepo.pdb
+G:\DigitalCity\Work\bin\EntityFramework.xml
+G:\DigitalCity\Work\bin\EntityFramework.SqlServer.xml
+G:\DigitalCity\Work\bin\Microsoft.AI.DependencyCollector.xml
+G:\DigitalCity\Work\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\DigitalCity\Work\bin\Microsoft.AI.Web.xml
+G:\DigitalCity\Work\bin\Microsoft.AI.WindowsServer.xml
+G:\DigitalCity\Work\bin\Microsoft.ApplicationInsights.xml
+G:\DigitalCity\Work\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\DigitalCity\Work\bin\System.Web.Http.Cors.xml
+G:\DigitalCity\Work\bin\Newtonsoft.Json.xml
+G:\DigitalCity\Work\bin\System.Net.Http.Formatting.xml
+G:\DigitalCity\Work\bin\System.Web.Helpers.xml
+G:\DigitalCity\Work\bin\System.Web.Http.xml
+G:\DigitalCity\Work\bin\System.Web.Http.WebHost.xml
+G:\DigitalCity\Work\bin\System.Web.Mvc.xml
+G:\DigitalCity\Work\bin\System.Web.Optimization.xml
+G:\DigitalCity\Work\bin\System.Web.Razor.xml
+G:\DigitalCity\Work\bin\System.Web.WebPages.xml
+G:\DigitalCity\Work\bin\System.Web.WebPages.Deployment.xml
+G:\DigitalCity\Work\bin\System.Web.WebPages.Razor.xml
+G:\DigitalCity\Work\bin\Antlr3.Runtime.pdb
+G:\DigitalCity\Work\bin\WorkData.pdb
+G:\DigitalCity\Work\obj\Debug\Work.csprojResolveAssemblyReference.cache
+G:\DigitalCity\Work\obj\Debug\Work.dll
+G:\DigitalCity\Work\obj\Debug\Work.pdb
