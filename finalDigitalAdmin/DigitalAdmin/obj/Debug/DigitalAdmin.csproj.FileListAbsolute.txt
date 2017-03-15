@@ -1,0 +1,16 @@
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.dll.config
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.pdb
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.csprojResolveAssemblyReference.cache
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.dll
+C:\Users\anilpandey\Desktop\Anil Data\Devbox\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.csprojResolveAssemblyReference.cache
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.dll
+C:\Users\Anil.DSOFT-PC\Desktop\anilfinal\finalDigitalAdmin\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.pdb
+G:\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.dll
+G:\finalDigitalAdmin\DigitalAdmin\bin\DigitalAdmin.pdb
+G:\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.csprojResolveAssemblyReference.cache
+G:\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.dll
+G:\finalDigitalAdmin\DigitalAdmin\obj\Debug\DigitalAdmin.pdb
