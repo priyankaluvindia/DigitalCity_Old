@@ -37,3 +37,13 @@ G:\DigitalCity\WorkData\bin\Debug\EntityFramework.SqlServer.xml
 G:\DigitalCity\WorkData\obj\Debug\WorkData.csprojResolveAssemblyReference.cache
 G:\DigitalCity\WorkData\obj\Debug\WorkData.dll
 G:\DigitalCity\WorkData\obj\Debug\WorkData.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\WorkData.dll.config
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\WorkData.dll
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\WorkData.pdb
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\EntityFramework.dll
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\EntityFramework.xml
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\obj\Debug\WorkData.csprojResolveAssemblyReference.cache
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\obj\Debug\WorkData.dll
+C:\Users\Anil.DSOFT-PC\Desktop\DigitalCity\WorkData\obj\Debug\WorkData.pdb
